@@ -1,6 +1,58 @@
+:root {
+    --color-back-link: rgb(61, 221, 74);
+    --color-link: rgb(0, 0, 0);
+    --color-main: #9b6060
+
+}
+
+/*Button*/
 .button {
-    background-color: rgb(61, 221, 74);
+    background-color: var(--color-back-link);
     color:rgb(0, 0, 0);
-    border: 2px solid #52b98e;
-    border-radius: 8px
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.button:hover {
+    color: var(--color-link);
+    background-color: transparent;
+}
+
+.button:active {
+    background-color: dimgray;
+}
+
+/*link*/
+.link {
+    color: rgb(255, 255, 255);
+}
+
+.link:hover {
+    color: var(--color-link)
+}
+
+/*hero-section*/
+.hero-title {
+    color: rgb(255, 255, 255)
+    ;
+}
+
+.hero-title .accent {
+    color: var(--color-main);
+}
+
+/*advantages*/
+.advantages-list {
+    color: #ff0000;
+    background-color: rgb(105, 3, 3);
+}
+
+.advantages-list .advantage-link {
+    color: var(--color-link);
+}
+
+/*section-title*/
+.section-title {
+    color: var(--color-main);
 }
