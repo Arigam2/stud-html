@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+.item {
+    flex-basis: 100px;
+    height: 180px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    
+
+}
+

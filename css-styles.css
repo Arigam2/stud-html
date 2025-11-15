@@ -8,7 +8,40 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
 }
+
+/*Header*/
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    font-family: 'Work Sans';
+    justify-content: center;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 /*Button*/
 .button {
     background-color: var(--color-back-link);
@@ -16,7 +49,6 @@ body {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 auto;
     display: block;
     font-size: 20px;
     font-weight: bold;
@@ -33,7 +65,7 @@ body {
 
 /*link*/
 .link {
-    color: rgb(255, 255, 255);
+    color: rgb(122, 8, 8);
 }
 
 .link:hover {
@@ -41,13 +73,21 @@ body {
 }
 
 /*hero-section*/
-.hero-title {
+.hero-title { 
     color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: 2px 3px 4px #ff0000;
     font-weight: 500;
     font-size: 50px;
     background-color: rgb(54, 0, 0);
+    margin-bottom: 0px;
+}
+.hero-section {
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0px;
 }
 
 .hero-title .accent {
@@ -55,12 +95,13 @@ body {
 }
 
 /*advantages*/
-.advantages-list {
+.about {
     color: #ff0000;
     background-color: rgb(105, 3, 3);
+
 }
 
-.advantages-list .advantage-link {
+.about .advantage-link {
     color: var(--color-link);
 }
 
@@ -89,6 +130,61 @@ img[src="./ds3-cheat-logo.png"] {
 }
 
 .offers li {
-    line-height: 4px;
     margin-bottom: 40px;
 }
+
+.visually-hidden {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+.advantages-section {
+    background-color: #ce3434;
+    padding: 0 16px;
+}
+
+
+
+.advantages-list {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.container {
+    /* width: 100%; */
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+.trad {
+    padding-top: 96px;
+}
+
+
+.trad-container {
+    display: flex;
+    gap: 90px;
+}
+
+/* Formats section */
+.format-card {
+    border: 1px solid lightgray;
+}
+
+
+
+/* * {
+    outline: 1px solid red;
+} */
