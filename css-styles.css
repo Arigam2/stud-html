@@ -5,15 +5,23 @@
 /*base*/
 }
 
+html {
+    
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     margin: 0;
     width: 100%;
     margin: 0 auto;
+    background-color: #fff5f3;
 }
 
 /*Header*/
+header {
+    background-color: #000000;
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -76,14 +84,18 @@ ul {
 .hero-title { 
     color: rgb(255, 255, 255);
     text-align: center;
-    text-shadow: 2px 3px 4px #ff0000;
+    text-shadow: 10px 10px 10px #ff0000;
     font-weight: 500;
-    font-size: 50px;
-    background-color: rgb(54, 0, 0);
+    font-size: 150px;
     margin-bottom: 0px;
 }
 .hero-section {
-
+padding: 150px 0;
+background-image: url(./dito0kvh8y471.webp);
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -96,9 +108,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*advantages*/
 .about {
-    color: #ff0000;
-    background-color: rgb(105, 3, 3);
-
+color: #ffffff;
+display: flex;
+margin: 0 auto;
+margin-bottom: 40px;
+margin-top: 30px;
+gap: 20px;
+justify-content: space-between;
+font-size: 20px;
 }
 
 .about .advantage-link {
@@ -108,7 +125,9 @@ h1, h2, h3, h4, h5, h6, p {
 /*section-title*/
 .section-title {
     color: var(--color-main);
+    position: relative;
 }
+
 .section-title {
     font-family: 'Roboto Mono';
 }
@@ -129,8 +148,55 @@ img[src="./ds3-cheat-logo.png"] {
     width: 100px;
 }
 
+.cheat-image {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 #fff5f3, -16px 16px 0 2px rgb(146, 3, 3);
+    margin: 0 20px;
+}
+
 .offers li {
     margin-bottom: 40px;
+}
+
+.section-title::before {
+position: absolute;
+left: -50px;
+bottom: 0;
+}
+.section-title::after {
+position: absolute;
+right: -50px;
+}
+
+.offers-section::before,
+.offers-section::after {
+    display: block;
+    width: 300px;
+    border: 2px solid rgb(95, 12, 12);
+    content: '';
+    margin: 0 auto;;
+}
+.card-box {
+
+}
+
+.offers {
+    display: flex;
+    padding: 30px;
+}
+.offer-item {
+    flex-basis: calc(100% - 30px / 2);
+    gap: 30px;
+}
+.offer-card {
+    display: flex;
+}
+
+.offers-section {
+    text-align: center;
+}
+.title-center {
+    text-align: center;
 }
 
 .visually-hidden {
@@ -143,7 +209,7 @@ overflow: hidden;
 }
 
 .advantages-section {
-    background-color: #ce3434;
+    background-color: #adadad;
     padding: 0 16px;
 }
 
@@ -170,6 +236,7 @@ main {
 
 .trad {
     padding-top: 96px;
+    margin-bottom: 80px;
 }
 
 
@@ -181,9 +248,53 @@ main {
 /* Formats section */
 .format-card {
     border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg,rgba(146, 54, 54, 0) 55.21%,rgba(104, 102, 102, 0.71) 72.92%,#000000 100%);
+    height:200px;
+}
+.formats-list {
+    display: flex;
+    gap: 20px;
+}
+.formats-item {
+    flex-basis: cals(100% -40px / 3);
+    flex-wrap: wrap;
+}
+.formats-flex {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
 }
 
+footer {
+    background-color: #807878;
+    padding: 15px;
+}
 
+/* .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: black;
+    border-radius: 32px;
+}
+.button-close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+} */
 
 /* * {
     outline: 1px solid red;
