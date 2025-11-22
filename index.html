@@ -27,7 +27,7 @@
                         <li><a class="link" href="#Contacts">Contacts</a></li>
                     </ul>
                 </nav>
-                <button class="button" type="button"> DOWNLOAD</button>
+                <button class="button button-open" type="button"> BUY NOW</button>
             </div>
         </div>
     </header>
@@ -129,7 +129,31 @@
         <section class="section" id="Contacts">
             <div class="container">
             <h2 class="section-title">Get your DS3 Cheat NOW!</h2>
-            </div>
+                        <div class="order-version-form">
+                            <form name="order-version" autocomplete="off">
+                            <div class="form-field">
+                                <label class="form-label" for="user-name">Your name</label>
+                                <input class="form-input" type="text" id="user-name" name="user-name">
+                            </div>
+                        
+                            <div class="form-field">
+                                <label class="form-label" for="user-mail">Your Mail</label>
+                                <input class="form-input" class="input" type="email" id="user-mail" name="user-mail">
+                            </div>
+                        
+                        
+                            <div class="form-field">
+                                <label class="form-label" for="user-comment">Leave your comment</label>
+                                <input class="form-input" type="text" id="user-comment" name="user-comment">
+                            </div>
+                        
+                            <button class="form-button button" type="submit">Order a Cheat</button>
+                            <p class="form-policy">
+                                Submitting I agree <a href="#">the policy</a>
+                            </p>
+                        </form>
+                        </div>
+        </div>
         </section>
     </main>
     <footer>
@@ -170,8 +194,33 @@
     <div class="backdrop">
         <div class="modal">
             <button class="button-close" type="button">Close</button>
+            <h2>Order a Cheat</h2>
+            <p>Write down your contact information!!</p>
+            <form name="version" autocomplete="on" novalidate>
+                <div class="form-field">
+                    <label class="form-label" for="user-name">Your name</label>
+                    <input class="form-input" type="text" id="user-name" name="user-name">
+                </div>
+                
+                <div class="form-field">
+                    <label class="form-label" for="user-mail">Your Mail</label>
+                    <input class="form-input" class="input" type="email" id="user-mail" name="user-mail">
+                </div>
+                
+
+                <div class="form-field">
+                    <label class="form-label" for="user-comment">Leave your comment</label>
+                    <input class="form-input" type="text" id="user-comment" name="user-comment">
+                </div>
+
+                <button class="form-button button" type="submit">Order a Cheat</button>
+                <p class="form-policy">
+                    Submitting I agree <a href="#">the policy</a>
+                </p>
+            </form>
         </div>
     </div>
 
+<script src="./java-model.js"></script>
 </body>
 </html>
